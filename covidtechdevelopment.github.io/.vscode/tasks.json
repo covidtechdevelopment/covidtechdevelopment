@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile SCSS to CSS",
+            "type": "shell",
+            "command": "sass ${workspaceFolder}/scss:${workspaceFolder}/css",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": {
+                "owner": "scss",
+                "fileLocation": ["relative", "${workspaceFolder}/scss"],
+                "pattern": {
+                    "regexp": "^(.*?)\\s+(\\d+):(\\d+)\\s+(.*?)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "message": 4
+                }
+            }
+        }
+    ],
+    "presentation": {
+        "watch": {
+            "tasks": [
+                "Compile SCSS to CSS"
+            ],
+            "clear": true
+        }
+    },
+    "tasks.json": [
+        {
+            "label": "Watch Sass",
+            "type": "npm",
+            "script": "sass-watch",
+            "problemMatcher": {
+                "owner": "scss",
+                "fileLocation": ["relative", "${workspaceFolder}/scss"],
+                "pattern": {
+                    "regexp": "^(.*?)\\s+(\\d+):(\\d+)\\s+(.*?)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "message": 4
+                }
+            }
+        }
+    ]
+}
