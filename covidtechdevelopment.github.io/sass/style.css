@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+body h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 200%;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: gray 3px 0;
+}
+body .opcion1--active {
+  font: menu;
+  color: aliceblue;
+  text-align: right;
+  text-shadow: 6px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+$nomemp: whitesmoke;
+
+body{
+    background-color: black;
+
+      h1{
+        color: $nomemp;
+        text-align: center;
+        font-size: 200%;
+        font-style: normal;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: gray 3px 0;
+      }
+      
+      .opcion1--active {
+        font: menu;
+        color: aliceblue;
+        text-align: right;
+        text-shadow: 6px;
+      }
+}
+
