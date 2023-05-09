@@ -1,12 +1,15 @@
-$nomemp: whitesmoke;
+@import "./variables";
+@import "./footer";
 
 body{
     background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
 
-      h1{
+      .titulo{
         color: $nomemp;
         text-align: center;
-        font-size: 200%;
+        font-size: 300%;
         font-style: normal;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-shadow: gray 3px 0;
@@ -15,8 +18,15 @@ body{
       .opcion1--active {
         font: menu;
         color: aliceblue;
+        text-shadow: 7px;
         text-align: right;
-        text-shadow: 6px;
-      }
+        width: 200%;
+        height: 500%;
+      } 
 }
 
+.container{
+  background-image: url(/imagenes/fondo.jpeg);
+  background-size: 100% 100%;
+
+}

@@ -1,0 +1,26 @@
+footer{
+  background-color: orange;
+  color: $nomemp;
+  height: 125px;
+  text-align: center;
+  
+  &:hover{
+    background-color: red;
+  }
+  .instagram{
+    &:link{color: blue;}
+    &:visited{color: aqua;}
+    font-weight: bolder;
+    font-size: 100%;
+  }
+  .facebook{
+    &:link{color: blue;}
+    &:visited{color: aqua;}
+    font-weight: lighter;
+    font-size: 100%;
+  }
+  .youtube{
+    &:link{color: blue;}
+    &:visited{color: aqua;}
+  }
+}

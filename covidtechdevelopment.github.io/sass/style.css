@@ -1,10 +1,48 @@
+footer {
+  background-color: orange;
+  color: whitesmoke;
+  height: 125px;
+  text-align: center;
+}
+footer:hover {
+  background-color: red;
+}
+footer .instagram {
+  font-weight: bolder;
+  font-size: 100%;
+}
+footer .instagram:link {
+  color: blue;
+}
+footer .instagram:visited {
+  color: aqua;
+}
+footer .facebook {
+  font-weight: lighter;
+  font-size: 100%;
+}
+footer .facebook:link {
+  color: blue;
+}
+footer .facebook:visited {
+  color: aqua;
+}
+footer .youtube:link {
+  color: blue;
+}
+footer .youtube:visited {
+  color: aqua;
+}
+
 body {
   background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
 }
-body h1 {
+body .titulo {
   color: whitesmoke;
   text-align: center;
-  font-size: 200%;
+  font-size: 300%;
   font-style: normal;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: gray 3px 0;
@@ -12,6 +50,13 @@ body h1 {
 body .opcion1--active {
   font: menu;
   color: aliceblue;
+  text-shadow: 7px;
   text-align: right;
-  text-shadow: 6px;
+  width: 200%;
+  height: 500%;
+}
+
+.container {
+  background-image: url(/imagenes/fondo.jpeg);
+  background-size: 100% 100%;
 }/*# sourceMappingURL=style.css.map */
