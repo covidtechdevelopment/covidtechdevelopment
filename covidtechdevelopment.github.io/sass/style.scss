@@ -1,32 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import "./variables";
 @import "./footer";
 
-body{
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
-
-      .titulo{
-        color: $nomemp;
-        text-align: center;
-        font-size: 300%;
-        font-style: normal;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-shadow: gray 3px 0;
-      }
-      
-      .opcion1--active {
-        font: menu;
-        color: aliceblue;
-        text-shadow: 7px;
-        text-align: right;
-        width: 200%;
-        height: 500%;
-      } 
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6%;
+  font-family: 'Press Start 2P', cursive;
+  //background-color: black;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+  //background: url('../imagenes/fondo.jpeg')
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(134, 132, 132);
+  font: menu;
+}
+img{
+  width: 80%;
+  height: auto;
+}
+nav, .servicios, .presentacion, .footer{
+  width: 80%;
+  margin: auto;
+}
+.titulo-servicios, .presentacion{
+  margin-bottom: 10%;
 
-.container{
-  background-image: url(/imagenes/fondo.jpeg);
-  background-size: 100% 100%;
-
+}
+.opcion1--active {
+  color: aliceblue;
+  text-shadow: 7px;
+  text-align: right;
+  width: 200%;
+  height: 500%;
+}
+.titulo{
+  color: $nomemp;
+  text-align: center;
+  font-size: 300%;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: gray 3px 0;
 }
