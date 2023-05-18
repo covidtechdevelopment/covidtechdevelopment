@@ -1,56 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import "./variables";
-@import "./footer";
+@import 'variables';
+@import 'footer';
+@import 'global';
+//@import 'medios';
+.logo{
+  width: 100px;
+  height: 100px;
+}
+header{
+  position: fixed;
+  top: 0;
+  border-top: 30px solid rgb(144, 206, 82); 
+  width: 100%;
+}
+.wrapper{
+  background-color: greenyellow;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-grow: 1;
+}
+//ejemplo nesting 
+nav{
+  @include caja-flex (space-between, center, nowrap);
+  ul{
+    display: flex;
+    padding: 0;
+    a{
+        padding: 10px;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    a:hover{
+      color: #6495ED;
+      transform: scale(1.1);
+    }
+  }
+}
+.presentacion{
+  padding-top: 180px;
+  padding-bottom: 50px;
+  @include caja-flex(space-between, center, nowrap);
+  .flex-item2{
+    text-align:center;
+  }
+  h1{
+    margin-top: 0;
+    padding-right: 30px;
+    font-size: $font-h1;
+    text-align: center;
+  }
+  p{
+    padding-right: 20px;  
+    padding-bottom: 10px;
+    text-align: center;
 
-html{
-  font-size: 62.5%;
-  box-sizing: border-box;
+  }
 }
-*, *::before, *::after{
-  box-sizing: inherit;
-}
-body{
-  margin: 0;
-  padding: 0;
-  line-height: 1.6%;
-  font-family: 'Press Start 2P', cursive;
-  //background-color: black;
-  box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
-  //background: url('../imagenes/fondo.jpeg')
-}
-ul{
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-  display: inline-block;
-  color: rgb(134, 132, 132);
-  font: menu;
-}
-img{
-  width: 80%;
-  height: auto;
-}
-nav, .servicios, .presentacion, .footer{
-  width: 80%;
-  margin: auto;
-}
-.titulo-servicios, .presentacion{
-  margin-bottom: 10%;
-
-}
-.opcion1--active {
-  color: aliceblue;
-  text-shadow: 7px;
-  text-align: right;
-  width: 200%;
-  height: 500%;
-}
-.titulo{
-  color: $nomemp;
-  text-align: center;
-  font-size: 300%;
-  font-style: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: gray 3px 0;
+.servicios{
+  div{
+    text-align: center;
+  }
+  .tipo-servicios{
+    @include caja-flex(center, center, nowrap);
+    i{
+      font-size: 30px;
+      color: #6495ED;
+    }
+  }
 }

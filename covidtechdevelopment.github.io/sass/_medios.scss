@@ -1,0 +1,32 @@
+//pantallas extra anchas
+@media screen and (min-width: 1400px) {
+    nav, .servicios, .footer-content, .presentacion{
+        width: 60%;
+        margin:auto;
+    } 
+}
+//pantallas medianas
+@media screen and (max-width:992px){
+    .presentacion, .tipo-servicios{
+        flex-wrap: wrap;
+    }
+    .presentacion  div{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    nav{
+        @include caja-flex(center, center, wrap);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+// pantallas pequenas
+@media screen and (max-width:420px){
+    .presentacion div{
+        text-align: center;
+        margin-bottom: 30px;
+        h1, p{
+            padding: 0;
+        }
+    }
+}

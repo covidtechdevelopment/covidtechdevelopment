@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 footer {
-  background-color: orange;
-  color: whitesmoke;
-  height: 125px;
+  min-height: 80px;
+  background-color: rgb(52, 53, 51);
+  margin-top: auto;
   text-align: center;
 }
+footer .footer-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 footer:hover {
-  background-color: red;
+  background-color: gray;
 }
 footer .instagram {
   font-weight: bolder;
-  font-size: 100%;
+  font-size: 50%;
 }
 footer .instagram:link {
   color: blue;
@@ -20,13 +27,16 @@ footer .instagram:visited {
 }
 footer .facebook {
   font-weight: lighter;
-  font-size: 100%;
+  font-size: 50%;
 }
 footer .facebook:link {
   color: blue;
 }
 footer .facebook:visited {
   color: aqua;
+}
+footer .youtube {
+  font-size: 50%;
 }
 footer .youtube:link {
   color: blue;
@@ -35,9 +45,44 @@ footer .youtube:visited {
   color: aqua;
 }
 
+p {
+  font-size: 2.5rem;
+  color: rgb(134, 132, 132);
+  font-family: "Share Tech Mono", monospace;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.btn, .btn-secundario, .btn-principal {
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn-principal {
+  color: #fff;
+  background-color: #6495ed;
+}
+
+.btn-secundario {
+  background-color: rgb(134, 132, 132);
+}
+
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 *, *::before, *::after {
@@ -48,8 +93,10 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6%;
-  font-family: "Press Start 2P", cursive;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 ul {
@@ -68,8 +115,8 @@ img {
   height: auto;
 }
 
-nav, .servicios, .presentacion, .footer {
-  width: 80%;
+nav, .servicios, .presentacion, .footer-content {
+  width: 90%;
   margin: auto;
 }
 
@@ -77,19 +124,92 @@ nav, .servicios, .presentacion, .footer {
   margin-bottom: 10%;
 }
 
+/*
 .opcion1--active {
-  color: aliceblue;
-  text-shadow: 7px;
-  text-align: right;
-  width: 200%;
-  height: 500%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font: menu;
+}*/
+.titulo {
+  color: rgb(57, 207, 57);
+  font-family: "Press Start 2P", cursive;
+  text-shadow: black 5px 0;
 }
 
-.titulo {
-  color: whitesmoke;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-top: 30px solid rgb(144, 206, 82);
+  width: 100%;
+}
+
+.wrapper {
+  background-color: greenyellow;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+}
+nav ul a {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+nav ul a:hover {
+  color: #6495ED;
+  transform: scale(1.1);
+}
+
+.presentacion {
+  padding-top: 180px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.presentacion .flex-item2 {
   text-align: center;
-  font-size: 300%;
-  font-style: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: gray 3px 0;
+}
+.presentacion h1 {
+  margin-top: 0;
+  padding-right: 30px;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.servicios div {
+  text-align: center;
+}
+.servicios .tipo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.servicios .tipo-servicios i {
+  font-size: 30px;
+  color: #6495ED;
 }/*# sourceMappingURL=style.css.map */

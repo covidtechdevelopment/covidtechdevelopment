@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import 'variables';
+p {
+  font-size: $font-p;
+  color: rgb(134, 132, 132);
+  font-family: 'Share Tech Mono', monospace;
+}
+h2 {
+  font-size: $font-h2;
+}
+h3 {
+  font-size: $font-h3;
+  font-weight: lighter;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.btn-principal {
+  @extend .btn;
+  color: #fff;
+  background-color: #6495ed;
+}
+.btn-secundario {
+  @extend .btn;
+  background-color: rgb(134, 132, 132);
+}
+@mixin caja-flex($principal, $cruzado, $wrap) {
+  display: flex;
+  justify-content: $principal;
+  align-items: $cruzado;
+  flex-wrap: $wrap;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6%;
+  font-family: 'Poppins', sans-serif;
+  display: flex; 
+  min-height: 100vh; 
+  flex-direction: column;
+  //background-color: black;
+  //box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  //background: url("../imagenes/fondo.jpeg");
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(134, 132, 132);
+  font: menu;
+}
+img {
+  width: 80%;
+  height: auto;
+}
+nav, .servicios, .presentacion, .footer-content{
+  width: 90%;
+  margin: auto;
+}
+.titulo-servicios, .presentacion{
+  margin-bottom: 10%;
+}
+
+/*
+.opcion1--active {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font: menu;
+}*/
+
+.titulo {
+  color: $nomemp;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: black 5px 0;
+}
