@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'footer';
 @import 'global';
-//@import 'medios';
+@import 'medios';
 .logo{
   width: 100px;
   height: 100px;
@@ -18,7 +18,7 @@ header{
   padding-bottom: 100px;
   flex-grow: 1;
 }
-//ejemplo nesting 
+//Ejemplo Nesting 
 nav{
   @include caja-flex (space-between, center, nowrap);
   ul{
@@ -37,7 +37,8 @@ nav{
 }
 .presentacion{
   padding-top: 180px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
+  margin-bottom: 200px;
   @include caja-flex(space-between, center, nowrap);
   .flex-item2{
     text-align:center;
@@ -46,13 +47,10 @@ nav{
     margin-top: 0;
     padding-right: 30px;
     font-size: $font-h1;
-    text-align: center;
   }
   p{
     padding-right: 20px;  
     padding-bottom: 10px;
-    text-align: center;
-
   }
 }
 .servicios{

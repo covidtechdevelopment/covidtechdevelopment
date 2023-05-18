@@ -1,5 +1,5 @@
 //pantallas extra anchas
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1500px) {
     nav, .servicios, .footer-content, .presentacion{
         width: 60%;
         margin:auto;
@@ -8,7 +8,7 @@
 //pantallas medianas
 @media screen and (max-width:992px){
     .presentacion, .tipo-servicios{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .presentacion  div{
         text-align: center;
