@@ -11,6 +11,7 @@ footer .footer-content {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  line-height: 40px;
 }
 footer:hover {
   background-color: gray;
@@ -184,6 +185,7 @@ nav, .servicios, .presentacion, .footer-content {
   }
 }
 .logo {
+  display: block;
   width: 100px;
   height: 100px;
 }
@@ -197,9 +199,14 @@ header {
 
 .wrapper {
   background-color: greenyellow;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-grow: 1;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -246,6 +253,10 @@ nav ul a:hover {
 
 .servicios div {
   text-align: center;
+  flex: 1;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
 }
 .servicios .tipo-servicios {
   display: flex;
@@ -253,7 +264,16 @@ nav ul a:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-.servicios .tipo-servicios i {
+.servicios .tipo-servicios div {
+  margin-top: 30px;
+  text-align: center;
+  margin: 20px;
+}
+.servicios .tipo-servicios div i {
   font-size: 30px;
   color: #6495ED;
+}
+.servicios .tipo-servicios div p {
+  line-height: 20px;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */

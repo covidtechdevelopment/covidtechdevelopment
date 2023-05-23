@@ -3,6 +3,7 @@
 @import 'global';
 @import 'medios';
 .logo{
+  display: block;
   width: 100px;
   height: 100px;
 }
@@ -14,9 +15,14 @@ header{
 }
 .wrapper{
   background-color: greenyellow;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-grow: 1;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 //Ejemplo Nesting 
 nav{
@@ -56,12 +62,25 @@ nav{
 .servicios{
   div{
     text-align: center;
+    flex: 1;
+    width: 100%;
+    max-width: 950px; // Ajusta el ancho máximo según tus necesidades
+    margin: 0 auto;
   }
   .tipo-servicios{
     @include caja-flex(center, center, nowrap);
-    i{
-      font-size: 30px;
-      color: #6495ED;
+    div{
+      margin-top: 30px; // Ajusta el margen superior según tus necesidades
+      text-align: center;
+      margin: 20px;
+     i{
+       font-size: 30px;
+       color: #6495ED;
+     }
+     p{
+      line-height: 20px;
+      text-align: justify;
+     }
     }
   }
 }
