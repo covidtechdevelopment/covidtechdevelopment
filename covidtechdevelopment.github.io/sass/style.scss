@@ -2,17 +2,18 @@
 @import 'footer';
 @import 'global';
 @import 'medios';
-.logo{
-  display: block;
-  width: 100px;
-  height: 100px;
+@import 'header';
+/*.logo{
+  //display: block;
+  width: 50px;
+  height: 50px;
 }
 header{
   position: fixed;
   top: 0;
-  border-top: 30px solid rgb(144, 206, 82); 
+  border-top: 10px solid rgb(243, 244, 242); 
   width: 100%;
-}
+}*/
 .wrapper{
   background-color: greenyellow;
   padding-top: 50px;
@@ -24,8 +25,22 @@ header{
   align-items: center;
   justify-content: center;
 }
+.mask-custom {
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+@media (max-width: 767px) {
+  .bg-image {
+    height: 1400px !important;
+  }
+}
 //Ejemplo Nesting 
-nav{
+/*nav{
   @include caja-flex (space-between, center, nowrap);
   ul{
     display: flex;
@@ -40,7 +55,7 @@ nav{
       transform: scale(1.1);
     }
   }
-}
+}*/
 .presentacion{
   padding-top: 180px;
   padding-bottom: 100px;
@@ -84,3 +99,7 @@ nav{
     }
   }
 }
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';

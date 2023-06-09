@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 p {
   font-size: $font-p;
   color: rgb(134, 132, 132);
@@ -74,8 +77,8 @@ img {
   width: 80%;
   height: auto;
 }
-nav, .servicios, .presentacion, .footer-content{
-  width: 90%;
+/*nav,*/ .servicios, .presentacion, .footer-content{
+  width: 100%;
   margin: auto;
 }
 .titulo-servicios, .presentacion{

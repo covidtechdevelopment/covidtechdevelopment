@@ -1,12 +1,12 @@
 //pantallas extra anchas
-@media screen and (min-width: 1500px) {
+@media (min-width: 1500px) {
     nav, .servicios, .footer-content, .presentacion{
         width: 60%;
         margin:auto;
     } 
 }
 //pantallas medianas
-@media screen and (max-width:992px){
+@media (max-width:992px){
     .presentacion, .tipo-servicios{
         flex-direction: column;
     }

@@ -1,0 +1,101 @@
+header {
+    font-family: 'Courier Prime', monospace;
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-brand {
+        font-size: 15px;
+    }
+    .nav-item {
+        font-size: 15px;
+        white-space: nowrap;
+        display: inline-block;
+        a:hover{
+            transform: scale(1.1);
+        }
+    }
+    .shrink{
+        width: 100%;
+        transition: aal ease-in-out 0.8s;
+        background: #353535;
+        position: fixed;
+        opacity: 0.7;
+    }
+    .top{
+        width: 100%;
+        transition: aal ease-in-out 0.8s;
+    }
+    .flag-mex{
+        display: inline-block;
+        background-image: url(../imagenes/f-mex.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+    }
+    .flag-usa{
+        display: inline-block;
+        background-image: url(../imagenes/f-usa.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+    }
+    .flag-france{
+        display: inline-block;
+        background-image: url(../imagenes/f-france.png);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: #fff;
+        }
+    }
+    .text-animation {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 4s steps(40), blink-caret 0.5s step-end infinite;
+        border-right: 0.10em solid #fff;
+    }
+    @mixin fix-dropdown-overflow {
+        @if $menu-height > $viewport-height {
+          max-height: $viewport-height;
+          overflow-y: auto;
+        } @else {
+          max-height: $menu-height;
+        }
+    }
+}
+
+
+/*header{
+    position: fixed;
+    top: 0;
+    border-top: 10px solid white; 
+    width: 100%;
+    background-color: white ;
+    nav{
+        text-align: center;
+    }
+}*/
