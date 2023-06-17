@@ -259,6 +259,19 @@ header .nav-item {
 header .nav-item a:hover {
   transform: scale(1.1);
 }
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header .dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #353535;
+}
+header .dropdown-item {
+  background-color: #353535;
+  font-size: 15px;
+  color: #fff;
+}
 header .shrink {
   width: 100%;
   transition: aal ease-in-out 0.8s;

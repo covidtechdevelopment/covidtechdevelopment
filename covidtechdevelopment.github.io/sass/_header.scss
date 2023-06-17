@@ -15,6 +15,21 @@ header {
             transform: scale(1.1);
         }
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        &:hover {
+          .dropdown-menu {
+            display: block;
+            background-color: #353535;
+          }
+        }
+    }
+    .dropdown-item{
+        background-color: #353535;
+        font-size: 15px;
+        color: #fff;
+    }
     .shrink{
         width: 100%;
         transition: aal ease-in-out 0.8s;
